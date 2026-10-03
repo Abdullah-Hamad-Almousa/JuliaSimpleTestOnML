@@ -38,6 +38,25 @@ Sample predictions first 5 rows
    4 │   12.98      12.12      0.86
    5 │   30.64      30.08      0.55
 
+<table>
+
+<tr>
+ <td>
+  Row
+ </td>
+ <td>
+  Actual
+ </td>
+ <td>
+  Predicted
+ </td>
+ <td>
+  Residual
+ </td>
+</tr>
+ 
+</table>
+
 New data point prediction
 
 Input: X1 = 4, X2 = 2.5 
