@@ -54,6 +54,76 @@ Sample predictions first 5 rows
   Residual
  </td>
 </tr>
+<tr>
+ <td>
+  1
+ </td>
+ <td>
+  24.72
+ </td>
+ <td>
+  24.59
+ </td>
+ <td>
+  0.13
+ </td>
+</tr>
+<tr>
+ <td>
+  2
+ </td>
+ <td>
+  12.56
+ </td>
+ <td>
+  13.47
+ </td>
+ <td>
+  -0.91
+ </td>
+</tr>
+<tr>
+ <td>
+  3
+ </td>
+ <td>
+  16.08
+ </td>
+ <td>
+  16.13
+ </td>
+ <td>
+  -0.05
+ </td>
+</tr>
+<tr>
+ <td>
+  4
+ </td>
+ <td>
+  12.98
+ </td>
+ <td>
+  12.12
+ </td>
+ <td>
+  0.86
+ </td>
+</tr>
+<tr>
+ <td>
+  5
+ </td>
+ <td>
+  30.64
+ </td>
+ <td>
+  30.08
+ </td>
+ <td>
+  0.55
+ </td>
+</tr>
  
 </table>
 
