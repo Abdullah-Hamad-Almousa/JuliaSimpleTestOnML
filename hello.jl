@@ -83,3 +83,59 @@ new_point = DataFrame(X1 = [4.0], X2 = [2.5])
 new_pred = predict(model, new_point)
 println("="^67, "\nNew data point prediction\n", "="^67)
 println("Input: X1 = 4, X2 = 2.5 \n", "Predicted Y:", round(new_pred[1], digits = 4))
+
+# Visual
+
+using Plots
+
+residuals = actuals .- pred
+
+# 1
+
+min_val = min(minimum(actuals), minimum(pred))
+max_val = max(maximum(actuals), maximum(pred))
+
+p1 = scatter(
+    actuals, pred, label="Predictions", xlabel="Actual Y",
+    ylabel="Predicted Y", title="1. Actual vs. Predicted",
+    legend=:topleft, color=:green, alpha=.8
+)
+
+plot!(p1, [min_val, max_val], [min_val, max_val],
+    label="Ideal (y = x)", color=:yellow, linestyle=:dash, lw=2
+)
+
+# 1
+
+# 2
+
+p2 = scatter(
+    pred, residuals, label="Residuals", xlabel="Predict Y",
+    ylabel="Residuals (Actual - Pred)", title="2. Residuals vs. Predicted",
+    legend=:topleft, color=:purple, alpha=.8
+)
+
+hline!(p2, [0], label="Zero Line", color=:green, linestyle=:dash,
+lw=2)
+
+# 2
+
+# 3
+
+p3 = histogram(
+    residuals, bins=10, label="Residuals", xlabel="Residuals value",
+    ylabel="Count", title="3. Error distribution", color=:teal, alpha=.8
+)
+
+vline!(p3, [0], label="Zero Mean", color=:orange, linestyle=:dash, lw=2)
+
+# 3
+
+# print
+
+all_plots = plot(p1, p2, p3, layout=(1,3), size=(1200, 600))
+display(all_plots)
+savefig(all_plots, "regression_analysis.png")
+println("\nPlots displayed and saved to 'regression_analysis.png'!")
+
+# Visual
