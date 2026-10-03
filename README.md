@@ -29,14 +29,6 @@ Test R^2:0.9749
 
 Sample predictions first 5 rows
 5×3 DataFrame
- Row │ Actual   Predicted  Residual
-     │ Float64  Float64    Float64
-─────┼──────────────────────────────
-   1 │   24.72      24.59      0.13
-   2 │   12.56      13.47     -0.91
-   3 │   16.08      16.13     -0.05
-   4 │   12.98      12.12      0.86
-   5 │   30.64      30.08      0.55
 
 <table>
 
